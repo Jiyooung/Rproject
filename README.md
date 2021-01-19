@@ -1,8 +1,10 @@
 # Rproject
 R을 이용한 데이터분석 기초
 
-## Curriculum
+## Data Analysis
+### [Curriculum](https://github.com/Jiyooung/Computer_Science/blob/main/Data_Analysis/README.md)
 
+## R Code
 - [변수](/Week_02)
 - [벡터, 매트릭스](/Week_03)
 - [매트릭스 vs 데이터프레임](/Week_04)

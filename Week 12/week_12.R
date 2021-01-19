@@ -1,4 +1,5 @@
-##### 12주차_1
+##### 12주차 : 데이터 시각화 2
+# 1
 install.packages("ggplot2")
 library("ggplot2")
 
@@ -22,26 +23,26 @@ ggplot(df, aes(x=month,y=rain)) +      # 그래프를 그릴 데이터 지정
   labs(x="월",y="강수량") +            # 그래프의 x, y축 레이블 지정
   coord_flip()                         # 그래프를 가로 방향으로 출력
 
-
+# 2
 #library(ggplot2)
 
 ggplot(iris, aes(x=Petal.Length)) +     # 그래프를 그릴 데이터 지정
   geom_histogram(binwidth=0.5)          # 히스토그램 작성 
 
-
+# 3
 #library(ggplot2)
 
 ggplot(iris, aes(x=Sepal.Width, fill=Species, color=Species)) +
   geom_histogram(binwidth = 0.5, position="dodge") +
   theme(legend.position="top")
 
-
+# 4
 #library(ggplot2)
 
 ggplot(data=iris, aes(x=Petal.Length, y=Petal.Width)) + 
   geom_point()
 
-
+# 5
 #library(ggplot2)
 
 ggplot(data=iris, aes(x=Petal.Length, y=Petal.Width,
@@ -50,19 +51,19 @@ ggplot(data=iris, aes(x=Petal.Length, y=Petal.Width,
   ggtitle("꽃잎의 길이와 폭") +              # 그래프의 제목 지정
   theme(plot.title = element_text(size=25, face="bold", colour="steelblue")) 
 
-
+# 6
 #library(ggplot2)
 
 ggplot(data=iris, aes(y=Petal.Length)) + 
   geom_boxplot(fill="yellow") 
 
-
+# 7
 #library(ggplot2)
 
 ggplot(data=iris, aes(y=Petal.Length, fill=Species)) + 
   geom_boxplot() 
 
-
+# 8
 #library(ggplot2)
 
 year <- 1937:1960
@@ -73,6 +74,7 @@ head(df)
 ggplot(data=df, aes(x=year,y=cnt)) +   # 선그래프 작성
   geom_line(col="red") 
 
+# 9
 #install.packages("Rtsne")
 library("Rtsne")
 #library("ggplot2")
@@ -94,7 +96,7 @@ head(df.tsne)
 ggplot(df.tsne, aes(x=X1, y=X2, color=ds.y)) + 
   geom_point(size=2) 
 
-
+# 10
 #install.packages(c("rgl", "car"))  # rgl은 R 4.0 이상 버전에서 가능
 library("car")
 library("rgl")

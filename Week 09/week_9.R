@@ -1,5 +1,5 @@
-##### 9주차
-
+##### 9주차 : 다중변수 자료의 탐색
+# 1
 wt <-mtcars$wt                   # 중량 자료
 mpg <- mtcars$mpg                # 연비 자료
 plot(wt, mpg,                    # 2개 변수(x축, y축)     
@@ -9,13 +9,14 @@ plot(wt, mpg,                    # 2개 변수(x축, y축)
      col="red",                  # point의 color
      pch=19)                     # point의 종류 
 
-
+# 2
 vars <- c("mpg","disp","drat","wt")    # 대상 변수 
 target <- mtcars[,vars]
 head(target)
 pairs(target,                          # 대상 데이터     
       main="Multi Plots") 
 
+# 3
 iris.2 <- iris[,3:4]                # 데이터 준비
 point <- as.numeric(iris$Species)   # 점의 모양
 point                               # point 내용 출력
@@ -25,7 +26,7 @@ plot(iris.2,
      pch=c(point),
      col=color[point]) 
 
-
+# 4
 beers = c(5,2,9,8,3,7,3,5,3,5)                 # 자료 입력
 bal <- c(0.1,0.03,0.19,0.12,0.04,0.0095,0.07,  # 자료 입력
          0.06,0.02,0.05)
@@ -36,10 +37,10 @@ res <- lm(bal~beers,data=tbl)                  # 회귀식 도출
 abline(res)                                    # 회귀선 그리기
 cor(beers,bal)                                 # 상관계수 계산
 
-
+# 5
 cor(iris[,1:4])                   # 4개 변수 간 상관성 분석
 
-
+# 6
 month = 1:12                             # 자료 입력
 late  = c(5,8,7,9,4,6,12,13,8,6,6,4)     # 자료 입력      
 plot(month,                              # x data
@@ -52,7 +53,7 @@ plot(month,                              # x data
      ylab="Late cnt"                     # y축 레이블
 )
 
-
+# 7
 month = 1:12
 late1  = c(5,8,7,9,4,6,12,13,8,6,6,4)
 late2  = c(4,6,5,8,7,8,10,11,6,5,7,3)
@@ -71,7 +72,7 @@ lines(month,                               # x data
       type = "b",                          # 선의 종류(line type) 선택
       col = "blue")                        # 선의 색깔 선택
 
-
+# 8
 ## (1) Prepare Data ----------------------
 library(mlbench)
 data("BostonHousing")

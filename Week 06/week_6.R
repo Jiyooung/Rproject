@@ -148,7 +148,7 @@ cat('5+8=', s, '\n')
 cat('5*8=', m, '\n')
 
 # 14
-setwd("C:/Rproject/test")      # myfunc.R이 저장된 폴더
+setwd("C:/Github/Rproject/Week 06/test")      # myfunc.R이 저장된 폴더
 source("myfunc.R")      # myfunc.R 안에 있는 함수 실행
 # 함수 사용
 a <- mydiv(20,4)        # 함수 호출
